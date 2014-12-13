@@ -1,43 +1,51 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="variables_set" id="1" inline="true" x="52" y="-86">
-    <field name="VAR">left</field>
-    <value name="VALUE">
-      <block type="sensor_object" id="8">
-        <field name="OBJECT">RIGHTFRONT</field>
-      </block>
-    </value>
-    <next>
-      <block type="variables_set" id="2" inline="true">
+  <block type="controls_whileUntil" id="47" inline="false" x="27" y="-61">
+    <field name="MODE">UNTIL</field>
+    <statement name="DO">
+      <block type="variables_set" id="1" inline="true">
         <field name="VAR">left</field>
         <value name="VALUE">
-          <block type="sensor_object" id="9">
-            <field name="OBJECT">RIGHTSIDE</field>
+          <block type="sensor_object" id="8">
+            <field name="OBJECT">RIGHTFRONT</field>
           </block>
         </value>
         <next>
-          <block type="variables_set" id="3" inline="true">
+          <block type="variables_set" id="2" inline="true">
             <field name="VAR">left</field>
             <value name="VALUE">
-              <block type="sensor_object" id="10">
-                <field name="OBJECT">REAR</field>
+              <block type="sensor_object" id="9">
+                <field name="OBJECT">RIGHTSIDE</field>
               </block>
             </value>
             <next>
-              <block type="variables_set" id="4" inline="true">
+              <block type="variables_set" id="3" inline="true">
                 <field name="VAR">left</field>
                 <value name="VALUE">
-                  <block type="sensor_object" id="7">
-                    <field name="OBJECT">LEFTSIDE</field>
+                  <block type="sensor_object" id="10">
+                    <field name="OBJECT">REAR</field>
                   </block>
                 </value>
                 <next>
-                  <block type="variables_set" id="5" inline="true">
+                  <block type="variables_set" id="4" inline="true">
                     <field name="VAR">left</field>
                     <value name="VALUE">
-                      <block type="sensor_object" id="6">
-                        <field name="OBJECT">LEFTFRONT</field>
+                      <block type="sensor_object" id="7">
+                        <field name="OBJECT">LEFTSIDE</field>
                       </block>
                     </value>
+                    <next>
+                      <block type="variables_set" id="5" inline="true">
+                        <field name="VAR">left</field>
+                        <value name="VALUE">
+                          <block type="sensor_object" id="6">
+                            <field name="OBJECT">LEFTFRONT</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="movement_leftmotor" id="20" inline="true"></block>
+                        </next>
+                      </block>
+                    </next>
                   </block>
                 </next>
               </block>
@@ -45,6 +53,6 @@
           </block>
         </next>
       </block>
-    </next>
+    </statement>
   </block>
 </xml>
