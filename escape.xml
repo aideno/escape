@@ -1,41 +1,41 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="variables_set" id="268" inline="true" x="52" y="-86">
-    <field name="VAR">item</field>
+  <block type="variables_set" id="1" inline="true" x="52" y="-86">
+    <field name="VAR">left</field>
     <value name="VALUE">
-      <block type="sensor_object" id="245">
-        <field name="OBJECT">LEFTFRONT</field>
+      <block type="sensor_object" id="8">
+        <field name="OBJECT">RIGHTFRONT</field>
       </block>
     </value>
     <next>
-      <block type="variables_set" id="269" inline="true">
-        <field name="VAR">item</field>
+      <block type="variables_set" id="2" inline="true">
+        <field name="VAR">left</field>
         <value name="VALUE">
-          <block type="sensor_object" id="270">
-            <field name="OBJECT">LEFTSIDE</field>
+          <block type="sensor_object" id="9">
+            <field name="OBJECT">RIGHTSIDE</field>
           </block>
         </value>
         <next>
-          <block type="variables_set" id="271" inline="true">
-            <field name="VAR">item</field>
+          <block type="variables_set" id="3" inline="true">
+            <field name="VAR">left</field>
             <value name="VALUE">
-              <block type="sensor_object" id="272">
-                <field name="OBJECT">RIGHTFRONT</field>
+              <block type="sensor_object" id="10">
+                <field name="OBJECT">REAR</field>
               </block>
             </value>
             <next>
-              <block type="variables_set" id="273" inline="true">
-                <field name="VAR">item</field>
+              <block type="variables_set" id="4" inline="true">
+                <field name="VAR">left</field>
                 <value name="VALUE">
-                  <block type="sensor_object" id="274">
-                    <field name="OBJECT">RIGHTSIDE</field>
+                  <block type="sensor_object" id="7">
+                    <field name="OBJECT">LEFTSIDE</field>
                   </block>
                 </value>
                 <next>
-                  <block type="variables_set" id="275" inline="true">
-                    <field name="VAR">item</field>
+                  <block type="variables_set" id="5" inline="true">
+                    <field name="VAR">left</field>
                     <value name="VALUE">
-                      <block type="sensor_object" id="276">
-                        <field name="OBJECT">REAR</field>
+                      <block type="sensor_object" id="6">
+                        <field name="OBJECT">LEFTFRONT</field>
                       </block>
                     </value>
                   </block>
