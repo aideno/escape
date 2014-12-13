@@ -1,6 +1,11 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <block type="controls_whileUntil" id="47" inline="false" x="27" y="-61">
     <field name="MODE">UNTIL</field>
+    <value name="NUMBER">
+      <block type="variables_get" id="101">
+        <field name="VAR">button is pressed</field>
+      </block>
+    </value>
     <statement name="DO">
       <block type="variables_set" id="1" inline="true">
         <field name="VAR">left</field>
