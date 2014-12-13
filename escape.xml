@@ -2,8 +2,8 @@
   <block type="controls_whileUntil" id="47" inline="false" x="27" y="-61">
     <field name="MODE">UNTIL</field>
     <value name="NUMBER">
-      <block type="variables_get" id="101">
-        <field name="VAR">button is pressed</field>
+      <block type="sensor_button" id="108">
+        <field name="OBJECT">ENTER</field>
       </block>
     </value>
     <statement name="DO">
@@ -46,9 +46,6 @@
                             <field name="OBJECT">LEFTFRONT</field>
                           </block>
                         </value>
-                        <next>
-                          <block type="movement_leftmotor" id="20" inline="true"></block>
-                        </next>
                       </block>
                     </next>
                   </block>
